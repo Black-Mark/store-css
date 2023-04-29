@@ -1,0 +1,120 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.header {
+  background-color: #FFA500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.title {
+  font-size: 3rem;
+  color: black;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: center;
+}
+
+th {
+  background-color: #FFA500;
+  font-weight: bold;
+}
+
+button {
+  background-color: white;
+  color: black;
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: blue;
+  color: white;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Custom styles for text and number input fields */
+input[type="text"], input[type="number"] {
+  color: #333; /* Set text color */
+  background-color: #f2f2f2; /* Set background color */
+  font-size: 16px; /* Set font size */
+  text-align: center;
+  padding: 5px; /* Set padding */
+  border: 1px solid #ccc; /* Add a 1px solid border */
+  border-radius: 5px; /* Add rounded corners */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1); /* Add inset shadow */
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+  text-align: center;
+  background-color: #fff;
+  outline: none;
+  padding: 5px;
+  border-color: black;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+input::placeholder {
+  color: #999;
+}
